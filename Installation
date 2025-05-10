@@ -17,7 +17,7 @@ agent any
 		stage ('deploy-index')
 		{
 			steps {
-				sh 'sudo echo "Welcome to Young Minds. Keep Learning!! Keep Growing!!" > index.html'
+				sh 'sudo echo "Welcome to jenkins class and we are learning DevOps" > index.html'
 				sh 'sudo mv index.html /var/www/html/index.html'
 
 			}

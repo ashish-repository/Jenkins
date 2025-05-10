@@ -7,7 +7,7 @@ stages {
 			stage	('Stage-1')
 			{
 				steps{
-				echo "Welcome to Young Minds!"
+				echo "Welcome we are learning Jenkins"
 				sleep 5
 				}
 			}	
