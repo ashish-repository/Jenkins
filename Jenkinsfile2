@@ -1,0 +1,31 @@
+pipeline{
+    
+    agent any
+    tools{
+        maven 'mymaven'
+    }
+    stages{
+        stage('Clone Repo'){
+            steps{
+                git 'https://github.com/ashish-repository/Practice-Shellscripts.git'
+            }
+        }
+        stage('Compile Code'){
+            steps{
+                sh 'mvn compile'
+            }
+        }
+         
+         stage('Test Code'){
+            steps{
+                sh 'mvn test'
+            }
+        }
+         stage('Package Code'){
+            steps{
+                sh 'mvn package'
+            }
+        }
+    }
+    
+}
